@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amanzada Perfumes Malaysia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf8f4;--ink:#0e1a20;--body:#26343a;--mut:#46545a;--line:#ddd3c8;--gold:#8f5a2e;--card:#fff;--ok:#14693f;--pre:#94500d}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Jost,system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.5}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:700}
+button,select,input{font:inherit}button{cursor:pointer}
+.top{background:#0e1a20;color:#fff;text-align:center;font-size:11.5px;font-weight:500;letter-spacing:.08em;padding:8px 10px}
+header{position:sticky;top:0;z-index:20;background:rgba(251,248,244,.97);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
+.brandlk{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brandlk img{height:38px;width:auto}
+.brandlk .bt b{display:block;font-family:'Cormorant Garamond',serif;font-size:21px;letter-spacing:.18em;font-weight:700;line-height:1}
+.brandlk .bt small{display:block;font-size:9.5px;font-weight:500;letter-spacing:.3em;color:var(--gold);margin-top:3px}
+.cartbtn{background:none;border:1.5px solid var(--ink);border-radius:999px;padding:7px 14px;display:flex;gap:8px;align-items:center;color:var(--ink);font-weight:500}
+.cartbtn b{background:var(--gold);color:#fff;border-radius:999px;min-width:20px;height:20px;font-size:12px;display:grid;place-items:center;font-weight:600}
+.hero{padding:40px 22px 46px;text-align:center;color:#fff;background:linear-gradient(rgba(14,26,32,.86),rgba(14,26,32,.93)),url(assets/brand.jpg) center/cover #0e1a20}
+.hero img.lg{width:min(280px,70%);height:auto;display:block;margin:0 auto 6px}
+.hero .my{letter-spacing:.5em;font-size:12.5px;font-weight:500;color:#f0bf96;margin:0 0 20px;padding-left:.5em}
+.hero h1{font-size:clamp(32px,8vw,54px);line-height:1.05;margin:6px 0 10px;color:#fff}
+.hero p.s{color:#f1f4f5;max-width:470px;margin:0 auto 20px;font-size:16px}
+.btn{background:var(--ink);color:#fff;border:0;border-radius:999px;padding:12px 26px;letter-spacing:.04em;font-size:14.5px;font-weight:500;text-decoration:none;display:inline-block;text-align:center}
+.btn.gold,.hero .btn{background:var(--gold)}.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--ink)}
+.btn:disabled{opacity:.4}
+section.wrap{max-width:1100px;margin:auto;padding:30px 14px}
+.sec-h{text-align:center;margin-bottom:16px}.sec-h h2{font-size:32px}.sec-h p{color:var(--body);font-size:14.5px;max-width:540px;margin:2px auto 0}
+.info{display:grid;gap:12px;max-width:1100px;margin:0 auto;padding:22px 14px 0}
+@media(min-width:760px){.info{grid-template-columns:1.2fr 1fr}}
+.box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.box h3{font-size:23px;margin-bottom:6px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;color:var(--ink)}
+th,td{padding:7px 4px;text-align:center;border-bottom:1px solid var(--line)}th{color:var(--mut);font-weight:600;font-size:12.5px}td:first-child,th:first-child{text-align:left}td{font-weight:500}
+tr:last-child td{border:0}
+.how p{font-size:14.5px;margin:6px 0;color:var(--body)}.how b{color:var(--ink)}
+.tag{display:inline-block;font-size:10.5px;letter-spacing:.06em;border-radius:999px;padding:2px 9px;font-weight:600;color:#fff}
+.tag.r{background:var(--ok)}.tag.p{background:var(--pre)}.tag.b{background:#0e1a20;color:#ffd9a8}
+.bar{display:grid;gap:8px;margin-bottom:14px}
+@media(min-width:760px){.bar{grid-template-columns:2fr 1fr 1fr 1fr 1fr}}
+.bar input,.bar select{width:100%;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.seg{display:flex;gap:8px;justify-content:center;margin-bottom:12px;flex-wrap:wrap}
+.seg button{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:8px 18px;font-size:14px;font-weight:500;color:var(--ink)}
+.seg button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.cnt{text-align:center;color:var(--mut);font-size:13px;margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:760px){.grid{grid-template-columns:repeat(4,1fr);gap:16px}}
+.grid.sig{grid-template-columns:repeat(2,1fr)}@media(min-width:900px){.grid.sig{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;position:relative}
+.img{aspect-ratio:4/5;display:grid;place-items:center;background:#fff;overflow:hidden;position:relative}
+.card.s .img{aspect-ratio:3/4}
+.img img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:54px 6px 6px}
+.card.s .img img{object-fit:cover;padding:0}
+.badge{position:absolute;top:8px;left:8px;display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+.tier{position:absolute;top:8px;right:8px;font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;background:#0e1a20;color:#ffd9a8;border-radius:999px;padding:2px 9px}
+.card .b{padding:10px 11px 12px;display:flex;flex-direction:column;gap:3px;flex:1}
+.card .cat{font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.card h3{font-size:20px;line-height:1.1;color:var(--ink)}
+.card .tg{font-size:13.5px;color:var(--gold);font-style:italic;font-weight:500}
+.st{font-size:12.5px;font-weight:500;margin-top:2px}.st.r{color:var(--ok)}.st.p{color:var(--pre)}
+.card select{width:100%;margin-top:4px;padding:8px;border:1.5px solid var(--line);border-radius:8px;background:#fff;font-size:13.5px;font-weight:500;color:var(--ink)}
+.card .btn{margin-top:7px;padding:10px;width:100%;font-size:14px}
+.ask{font-size:12.5px;color:var(--mut);text-align:center;margin-top:6px;text-decoration:underline}
+details{font-size:13px;color:var(--body);margin-top:4px}summary{cursor:pointer;color:var(--mut);font-size:12.5px;font-weight:500}
+details p{margin-top:4px}
+.pn{display:none;font-size:12.5px;line-height:1.4;color:#6b3b07;background:#fff3e2;border:1px solid #e3c08f;border-radius:8px;padding:7px 9px;margin-top:5px}
+.alertbox{background:#e9f6ee;border:1.5px solid #128c4a;border-radius:12px;padding:10px 12px;margin-top:10px;font-size:14px;color:#0b4d2a;text-align:left}
+.alertbox b{color:#07391e}
+.promo{display:flex;gap:8px;margin:8px 0 2px}.promo input{flex:1;min-width:0;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);text-transform:uppercase}.promo button{border:1.5px solid var(--ink);background:#fff;color:var(--ink);border-radius:10px;padding:0 14px;font-weight:600}.promo.ok{align-items:center;justify-content:space-between;background:#e9f6ee;border:1.5px solid #128c4a;border-radius:10px;padding:8px 10px;font-size:13.5px;color:#0b4d2a}.promo.ok button{padding:4px 10px;font-size:12.5px;border-width:1px}.pmsg{font-size:12.5px;font-weight:500;min-height:0;margin-bottom:4px}
+.more{display:block;margin:20px auto 0}
+.empty{text-align:center;color:var(--mut);padding:40px 0}
+.pillars{display:grid;gap:14px;text-align:center;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 18px}
+@media(min-width:760px){.pillars{grid-template-columns:repeat(3,1fr)}}
+.pillars h3{font-size:23px}.pillars p{color:var(--body);font-size:14.5px}
+footer{padding:26px 26px 90px;text-align:center;color:var(--mut);font-size:12.5px}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:.2s;z-index:40}
+.ov.on{opacity:1;pointer-events:auto}
+.panel{position:fixed;top:0;right:0;height:100%;width:min(450px,100%);background:var(--bg);z-index:50;transform:translateX(100%);transition:.25s;display:flex;flex-direction:column}
+.panel.on{transform:none}
+.ph{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}
+.ph h2{font-size:26px}.x{background:none;border:0;font-size:28px;line-height:1;color:var(--ink)}
+.pb{flex:1;overflow:auto;padding:14px 18px}
+.pf{padding:12px 18px;border-top:1px solid var(--line);background:#fff}
+.row{display:flex;justify-content:space-between;gap:10px}
+.item{display:flex;gap:11px;padding:11px 0;border-bottom:1px solid var(--line)}
+.item .t{width:54px;height:66px;border-radius:8px;flex:none;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.item .t img{width:100%;height:100%;object-fit:cover}
+.item .i{flex:1;font-size:14.5px}.item .i small{color:var(--mut);display:block;font-size:12.5px}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px;margin-top:6px;background:#fff}
+.qty button{width:30px;height:28px;background:none;border:0;font-size:16px;color:var(--ink)}.qty span{min-width:22px;text-align:center;font-weight:500}
+label{display:block;font-size:13.5px;font-weight:500;color:var(--body);margin:12px 0 4px}
+.pb input,.pb textarea{width:100%;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;font:inherit;background:#fff;color:var(--ink)}
+.pay{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:10px;text-align:center}
+.pay img{width:min(250px,80%);border-radius:10px;border:1px solid var(--line)}
+.sumbox{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14.5px}
+.sumbox .row{padding:2px 0}
+.sumbox .tot{border-top:1px solid var(--line);margin-top:6px;padding-top:6px}
+.nowpay{background:#fff3e2;border:1px solid #e3c08f;border-radius:10px;padding:8px 10px;margin-top:8px}
+.nowpay b{font-size:18px}
+.note{font-size:12.5px;color:var(--mut);margin-top:8px}
+.demo{background:#fff3cf;border:1px dashed var(--gold);border-radius:10px;padding:8px 10px;font-size:12.5px;margin-bottom:10px;color:var(--ink)}
+.steps{font-size:12.5px;font-weight:500;color:var(--ink);padding:10px 18px 0}
+.steps i{display:block;font-style:normal;text-align:center;padding-bottom:6px;border-bottom:2px solid var(--gold)}
+.wa{background:#128c4a;color:#fff;display:block;text-decoration:none;text-align:center;padding:13px;border-radius:999px;font-weight:600}
+.wa.dis{opacity:.45;pointer-events:none}
+.wa.alt{background:#fff;color:#0d6e3a;border:1.5px solid #128c4a;margin-top:8px;padding:10px}
+.fab{position:fixed;left:14px;bottom:16px;z-index:30;background:#128c4a;color:#fff;text-decoration:none;border-radius:999px;padding:11px 16px;font-size:14px;font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-size:13.5px;transition:.25s;z-index:70;white-space:nowrap}
+.toast.on{transform:translateX(-50%)}
+</style>
+</head>
+<body>
+<div class="top">READY STOCK · PREORDER WITH RM100 DEPOSIT · SHIPPING TO MALAYSIA &amp; SINGAPORE</div>
+<header>
+  <a class="brandlk" href="#"><img src="assets/emblem.png" alt="Amanzada"><span class="bt"><b>AMANZADA</b><small>PERFUMES MALAYSIA</small></span></a>
+  <button class="cartbtn" onclick="openCart()" aria-label="Open cart">Cart <b id="cnt">0</b></button>
+</header>
+
+<div class="hero">
+  <img class="lg" src="assets/logo.png" alt="Amanzada Perfumes">
+  <p class="my">MALAYSIA</p>
+  <h1>Luxury Fragrances,<br>Your Choice</h1>
+  <p class="s">Curated impression perfumes and the Amanzada Signature Series. Ready stock and preorder, ordered directly through WhatsApp.</p>
+  <a class="btn" href="#bestsellers">Shop the Collection</a>
+</div>
+
+<div class="info">
+  <div class="box">
+    <h3>Price List</h3>
+    <table>
+      <tr><th></th><th>50ml</th><th>100ml</th></tr>
+      <tr><td>Basic</td><td>RM249</td><td>RM289</td></tr>
+      <tr><td>Exclusive</td><td>RM289</td><td>RM339</td></tr>
+      <tr><td>Premium</td><td>RM319</td><td>RM459</td></tr>
+      <tr><td>Signature Series</td><td>RM459</td><td>–</td></tr>
+    </table>
+  </div>
+  <div class="box how">
+    <h3>How to Order</h3>
+    <p><span class="tag r">READY STOCK</span> Pay in full now. Stock is ready to ship.</p>
+    <p><span class="tag p">PREORDER</span> Pay a <b>RM100 deposit</b> now. Pay the balance once your item arrives in Malaysia.</p>
+    <p><b>Shipping:</b> RM10 within Malaysia · SGD 30 to Singapore. We currently ship to Malaysia and Singapore only.</p>
+  </div>
+</div>
+
+<section class="wrap" id="bestsellers">
+  <div class="sec-h"><h2>Best Sellers</h2><p>Our customers' favourites.</p></div>
+  <div class="grid sig" id="bestGrid"></div>
+</section>
+
+<section class="wrap" id="signature" style="padding-top:10px">
+  <div class="sec-h"><h2>Amanzada Signature Series</h2><p>Amanzada's own fragrances, Extrait de Parfum 50ml.</p></div>
+  <div class="grid sig" id="sigGrid"></div>
+</section>
+
+<section class="wrap" id="koleksi" style="padding-top:10px">
+  <div class="sec-h"><h2>Impression Perfume Collection</h2><p>Choose ready stock to pay in full and receive right away, or preorder any fragrance with a RM100 deposit.</p></div>
+  <div class="seg" id="seg"></div>
+  <div class="bar">
+    <input id="q" type="search" placeholder="Search name or brand…" oninput="setQ(this.value)">
+    <select id="fb" onchange="F.brand=this.value;go()"></select>
+    <select id="fg" onchange="F.g=this.value;go()"><option value="Semua">All</option><option value="Lelaki">Men</option><option value="Perempuan">Women</option><option value="Unisex">Unisex</option></select>
+    <select id="ft" onchange="F.t=this.value;go()"><option value="">All tiers</option><option value="B">Basic</option><option value="E">Exclusive</option><option value="P">Premium</option></select>
+    <select id="fo" onchange="F.o=this.value;go()"><option value="">Sort: Ready stock first</option><option value="az">Name A–Z</option></select>
+  </div>
+  <div class="cnt" id="count"></div>
+  <div class="grid" id="grid"></div>
+  <button class="btn ghost more" id="more" onclick="LIM+=24;render()">Load more</button>
+</section>
+
+<div class="pillars">
+  <div><h3>Ready Stock &amp; Preorder</h3><p>Stock ready to ship, or reserve yours with just a RM100 deposit.</p></div>
+  <div><h3>Long Lasting</h3><p>High concentration, well suited to Malaysia's climate.</p></div>
+  <div><h3>Easy Ordering</h3><p>Pick your products, pay by QR, and send your order straight to WhatsApp.</p></div>
+</div>
+<footer><img src="assets/logo.png" alt="Amanzada Perfumes" style="width:190px;display:block;margin:0 auto 2px"><div style="letter-spacing:.5em;font-size:11px;font-weight:500;color:var(--gold);margin-bottom:10px;padding-left:.5em">MALAYSIA</div>© Amanzada Perfumes Malaysia</footer>
+
+<a class="fab" id="fab" href="#" target="_blank" rel="noopener">Ask on WhatsApp</a>
+<div class="ov" id="ov" onclick="closeAll()"></div>
+
+<aside class="panel" id="cart" aria-label="Cart">
+  <div class="ph"><h2>Your Cart</h2><button class="x" onclick="closeAll()">×</button></div>
+  <div class="pb" id="cartBody"></div>
+  <div class="pf" id="cartFoot"></div>
+</aside>
+
+<aside class="panel" id="co" aria-label="Payment">
+  <div class="ph"><h2>Payment &amp; Order</h2><button class="x" onclick="closeAll()">×</button></div>
+  <div class="steps"><i>Enter details · Pay · Send on WhatsApp</i></div>
+  <div class="pb">
+    <div class="demo" id="demoNote" style="display:none">The WhatsApp number is still a placeholder. Replace it before going live.</div>
+    <label style="margin-top:0">Deliver to</label>
+    <select id="dest" onchange="setDest(this.value)" style="width:100%;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);margin-bottom:10px"><option value="MY">Malaysia (shipping RM10)</option><option value="SG">Singapore (shipping SGD 30)</option></select>
+    <div id="sum"></div>
+    <label>Full name</label><input id="name" placeholder="e.g. Aisyah binti Ahmad" oninput="upd()">
+    <label>Phone number</label><input id="phone" inputmode="tel" placeholder="e.g. 012-3456789" oninput="upd()">
+    <label>Delivery address</label><textarea id="addr" rows="3" placeholder="House no., street, postcode, city, state" oninput="upd()"></textarea>
+    <label>Notes (optional)</label><input id="note" placeholder="e.g. please gift wrap" oninput="upd()">
+    <div class="pay" id="payBox"></div>
+    <p class="note">After paying, tap the WhatsApp button below. Your order list is already in the message. Don't forget to attach your payment slip in that chat.</p>
+  </div>
+  <div class="pf">
+    <a class="wa dis" id="wa" href="#" target="_blank" rel="noopener">Send Order via WhatsApp</a>
+    <a class="wa alt" id="wa2" href="#" target="_blank" rel="noopener">Have a question? Ask on WhatsApp</a>
+    <button class="btn ghost" style="width:100%;margin-top:8px;padding:9px" onclick="openCart()">← Back to cart</button>
+  </div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<script src="assets/data.js"></script>
+<script>
+/* ====== SETTINGS – change here ====== */
+const CFG={
+  brand:"Amanzada Perfumes Malaysia",
+  whatsapp:"601112970956",  // format: 60 + number without leading 0
+  deposit:100,              // preorder deposit per bottle
+  shipMY:10, shipSG:30,     // shipping: RM10 within Malaysia, SGD 30 to Singapore
+  promo:{code:"AZMRM20", off:20, until:"2026-12-31T23:59:59+08:00"},  // RM20 off total bill, valid until 31 Dec 2026
+  payName:"NUR AMNI BINTI AMRAN", payLabel:"Touch 'n Go eWallet / DuitNow QR"
+};
+const BEST=['n1','261','77'];
+const PRICE={B:{'50ml':249,'100ml':289},E:{'50ml':289,'100ml':339},P:{'50ml':319,'100ml':459},S:{'50ml':459}};
+const TIERN={B:'Basic',E:'Exclusive',P:'Premium',S:'Signature'};
+const GL={Lelaki:'Men',Perempuan:'Women',Unisex:'Unisex'};
+/* ===================================== */
+const $=id=>document.getElementById(id);
+const rm=n=>"RM"+Number(n).toFixed(2).replace(/\.00$/,"");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const BYID={};PRODUCTS.forEach(p=>BYID[p.id]=p);
+const full=p=>"AZ "+(p.b==="Amanzada"?"":p.b+" ")+p.n;
+const sizes=p=>p.t==='S'?['50ml']:(p.id==='348'?['30ml','50ml','100ml']:['50ml','100ml']);
+const price=(p,s)=>(p.id==='348'&&s==='30ml')?189:PRICE[p.t][s];
+const stock=(id,s)=>((STOCK[id]||{})[s])||0;
+const hasReady=p=>Object.values(STOCK[p.id]||{}).some(q=>q>0);
+const wa=t=>`https://wa.me/${CFG.whatsapp}?text=${encodeURIComponent(t)}`;
+let cart=[];try{cart=JSON.parse(localStorage.getItem("az_cart")||"[]").filter(i=>BYID[i.id])}catch(e){}
+const save=()=>{try{localStorage.setItem("az_cart",JSON.stringify(cart))}catch(e){}};
+let dest='MY',promo=false;
+const F={status:'all',brand:'',g:'Semua',t:'',o:'',q:''};let LIM=24;
+
+function bottle(s){return `<svg width="${s}" height="${s}" viewBox="0 0 100 100"><rect x="38" y="8" width="24" height="12" rx="3" fill="#c9a15a"/><rect x="44" y="20" width="12" height="8" fill="#c9a15a" opacity=".7"/><rect x="24" y="28" width="52" height="62" rx="12" fill="#1a2a32"/><rect x="40" y="52" width="30" height="16" rx="3" fill="#c9a15a" opacity=".85"/></svg>`}
+function imgTag(p){return p.img?`<img src="${p.img}" alt="${esc(full(p))}" loading="lazy">`:bottle(90)}
+
+function cardHTML(p,pre){
+  const ss=sizes(p),def=['100ml','50ml','30ml'].find(s=>ss.includes(s)&&stock(p.id,s)>0)||(ss.includes('100ml')?'100ml':ss[0]);
+  const sig=p.t==='S',tg=p.tg||'',note=p.d,rd=hasReady(p),k=(pre||'')+p.id;
+  return `<div class="card${sig?' s':''}">
+   <div class="img">${imgTag(p)}</div>
+   <div class="badge">${BEST.includes(p.id)?'<span class="tag b">★ BEST SELLER</span>':''}<span class="tag ${rd?'r':'p'}">${rd?'READY STOCK':'PREORDER'}</span></div>
+   ${p.t==='E'||p.t==='P'?`<span class="tier">${TIERN[p.t]}</span>`:''}
+   <div class="b"><span class="cat">${esc(p.b)}${p.g&&!sig?' · '+(GL[p.g]||p.g):''}</span><h3>${esc(full(p))}</h3>
+    ${sig?`<span class="tg">${esc(tg)}</span>`:''}
+    ${note?`<details><summary>Scent notes</summary><p>${esc(note)}</p></details>`:''}
+    <select id="sz${k}" data-id="${p.id}" onchange="selSz('${k}')">${ss.map(s=>`<option value="${s}" ${s===def?'selected':''}>${s} – ${rm(price(p,s))}</option>`).join('')}</select>
+    <div class="st" id="st${k}"></div>
+    <div class="pn" id="pn${k}">This is a preorder (2 weeks) as our stock is directly from Dubai. Kindly be patient. I promise it will be worth the wait.</div>
+    <button class="btn" onclick="add('${p.id}','${k}')">Add to Cart</button>
+    <a class="ask" target="_blank" rel="noopener" href="${wa('Hi, I would like to ask about '+full(p)+' at '+CFG.brand)}">Ask about this product</a>
+   </div></div>`;
+}
+function selSz(k){const s=$("sz"+k),id=s.dataset.id,q=stock(id,s.value),e=$("st"+k);
+  e.className="st "+(q>0?'r':'p');
+  e.textContent=q>0?`Ready stock: ${q} unit${q>1?'s':''} (pay in full)`:`Preorder: ${rm(CFG.deposit)} deposit`;
+  const n=$("pn"+k);if(n)n.style.display=q>0?'none':'block'}
+function fixStatus(scope){scope.querySelectorAll('.card select').forEach(s=>selSz(s.id.slice(2)))}
+
+function list(){
+  const q=F.q.trim().toLowerCase();
+  let a=PRODUCTS.filter(p=>p.t!=='S');
+  if(F.status==='ready')a=a.filter(hasReady);
+  if(F.status==='pre')a=a.filter(p=>!hasReady(p));
+  if(F.brand)a=a.filter(p=>p.b===F.brand);
+  if(F.g!=='Semua')a=a.filter(p=>p.g===F.g);
+  if(F.t)a=a.filter(p=>p.t===F.t);
+  if(q)a=a.filter(p=>(p.b+' '+p.n).toLowerCase().includes(q));
+  const cmp=(x,y)=>(x.b+x.n).localeCompare(y.b+y.n);
+  a.sort(F.o==='az'?cmp:((x,y)=>(hasReady(y)-hasReady(x))||cmp(x,y)));
+  return a;
+}
+function render(){
+  const a=list();
+  $("count").textContent=a.length+(a.length===1?" product":" products");
+  $("grid").innerHTML=a.length?a.slice(0,LIM).map(p=>cardHTML(p)).join(""):'<div class="empty" style="grid-column:1/-1">No products found. Try another search or ask us on WhatsApp.</div>';
+  $("more").style.display=a.length>LIM?'block':'none';
+  fixStatus($("grid"));
+}
+function go(){LIM=24;render()}
+let qt;function setQ(v){F.q=v;clearTimeout(qt);qt=setTimeout(go,150)}
+function setSeg(s){F.status=s;renderSeg();go()}
+function renderSeg(){
+  const al=PRODUCTS.filter(p=>p.t!=='S'),nr=al.filter(hasReady).length,np=al.length-nr;
+  const b=(k,t)=>`<button class="${F.status===k?'on':''}" onclick="setSeg('${k}')">${t}</button>`;
+  $("seg").innerHTML=b('all',`All (${al.length})`)+b('ready',`Ready Stock (${nr})`)+b('pre',`Preorder (${np})`);
+}
+function initFilters(){
+  const bs=[...new Set(PRODUCTS.filter(p=>p.t!=='S').map(p=>p.b))].sort((a,b)=>a.localeCompare(b));
+  $("fb").innerHTML='<option value="">All brands</option>'+bs.map(b=>`<option>${esc(b)}</option>`).join('');
+}
+
+/* cart */
+function add(id,k){
+  const p=BYID[id],size=$("sz"+k).value,ex=cart.find(i=>i.id===id&&i.size===size);
+  if(ex)ex.q++;else cart.push({id,size,q:1});
+  save();updCount();toast(full(p)+" ("+size+") added");
+}
+function line(i){const p=BYID[i.id],pr=price(p,i.size),st=stock(i.id,i.size),r=Math.min(i.q,st),pre=i.q-r;return {p,pr,r,pre,total:pr*i.q,now:pr*r+CFG.deposit*pre}}
+function sums(){
+  let subtotal=0,now=0,pre=0;cart.forEach(i=>{const l=line(i);subtotal+=l.total;now+=l.now;pre+=l.pre});
+  const disc=promo?Math.min(CFG.promo.off,subtotal):0,dNow=Math.min(disc,Math.max(0,now-CFG.deposit*pre));
+  const total=subtotal-disc;now-=dNow;
+  return {subtotal,disc,total,now,bal:total-now,pre};
+}
+function promoBox(p){
+  if(promo)return `<div class="promo ok"><span>✓ Code <b>${esc(CFG.promo.code)}</b> applied: ${rm(CFG.promo.off)} off</span><button onclick="removePromo()">Remove</button></div>`;
+  return `<div class="promo"><input id="pi_${p}" placeholder="Promo code" autocapitalize="characters" onkeydown="if(event.key==='Enter')applyPromo('${p}')"><button onclick="applyPromo('${p}')">Apply</button></div><div class="pmsg"></div>`;
+}
+function pm(t,ok){document.querySelectorAll('.pmsg').forEach(e=>{e.textContent=t;e.style.color=ok?'var(--ok)':'#b3261e'})}
+function refreshAll(){renderCart();if($("co").classList.contains("on")){renderCO();upd()}}
+function applyPromo(p){
+  const v=$("pi_"+p).value.trim().toUpperCase();
+  if(!v){pm('Please enter a promo code.');return}
+  if(v!==CFG.promo.code.toUpperCase()){pm('Sorry, this promo code is not valid.');return}
+  if(Date.now()>Date.parse(CFG.promo.until)){pm('Sorry, this promo code has expired.');return}
+  promo=true;refreshAll();toast('Promo code applied');
+}
+function removePromo(){promo=false;refreshAll()}
+function updCount(){$("cnt").textContent=cart.reduce((s,i)=>s+i.q,0)}
+function chg(k,d){cart[k].q+=d;if(cart[k].q<=0)cart.splice(k,1);save();updCount();renderCart()}
+function stTxt(l){return (l.r?`<span class="tag r">${l.r} READY</span> `:'')+(l.pre?`<span class="tag p">${l.pre} PREORDER</span>`:'')}
+function renderCart(){
+  if(!cart.length){$("cartBody").innerHTML='<div class="empty">Your cart is empty.</div>';$("cartFoot").innerHTML='<button class="btn" style="width:100%" onclick="closeAll()">Start Shopping</button>';return}
+  $("cartBody").innerHTML=cart.map((i,k)=>{const l=line(i);return `<div class="item">
+    <div class="t">${l.p.img?`<img src="${l.p.img}" alt="">`:''}</div>
+    <div class="i"><b>${esc(full(l.p))}</b><small>${i.size} · ${rm(l.pr)} each</small>${stTxt(l)}
+      <div class="qty"><button onclick="chg(${k},-1)">−</button><span>${i.q}</span><button onclick="chg(${k},1)">+</button></div></div>
+    <b>${rm(l.total)}</b></div>`}).join("");
+  const s=sums();
+  $("cartFoot").innerHTML=`${promoBox('c')}${s.disc?`<div class="row" style="color:var(--ok);font-weight:500"><span>Promo discount</span><span>−${rm(s.disc)}</span></div>`:''}
+   <div class="row"><span>Order total</span><b>${rm(s.total)}</b></div>
+   <div class="row" style="font-size:17px;margin-top:4px"><b>Pay now</b><b>${rm(s.now)}</b></div>
+   ${s.pre?`<div class="row" style="color:var(--pre);font-size:13.5px;font-weight:500"><span>Preorder balance (due when stock arrives in Malaysia)</span><span>${rm(s.bal)}</span></div><div class="pn" style="display:block">This is a preorder (2 weeks) as our stock is directly from Dubai. Kindly be patient. I promise it will be worth the wait.</div>`:''}
+   <div class="note" style="margin-top:6px">Shipping is added at checkout: RM10 within Malaysia, SGD 30 to Singapore.</div>
+   <button class="btn gold" style="width:100%;margin-top:8px" onclick="openCO()">Proceed to Payment</button>
+   <a class="wa alt" target="_blank" rel="noopener" href="${wa('Hi, I have a question before placing an order at '+CFG.brand)}">Ask on WhatsApp</a>`;
+}
+function show(id){closeAll(true);$("ov").classList.add("on");$(id).classList.add("on")}
+function closeAll(k){["cart","co"].forEach(i=>$(i).classList.remove("on"));if(!k)$("ov").classList.remove("on")}
+function openCart(){renderCart();show("cart")}
+function setDest(v){dest=v;renderCO();upd()}
+function renderCO(){
+  const s=sums(),my=dest==='MY',ship=my?CFG.shipMY:0,pay=s.now+ship;
+  $("dest").value=dest;
+  $("sum").innerHTML=`<div class="sumbox">`+cart.map(i=>{const l=line(i);return `<div class="row"><span>${i.q}× ${esc(full(l.p))} (${i.size})<br>${stTxt(l)}</span><span>${rm(l.total)}</span></div>`}).join('')+
+   `<div class="row tot"><span>Subtotal</span><span>${rm(s.subtotal)}</span></div>
+    ${s.disc?`<div class="row" style="color:var(--ok);font-weight:500"><span>Promo (${esc(CFG.promo.code)})</span><span>−${rm(s.disc)}</span></div>`:''}
+    <div class="row"><span>Shipping (${my?'Malaysia':'Singapore'})</span><span>${my?rm(CFG.shipMY):'SGD '+CFG.shipSG}</span></div>
+    <div class="row" style="font-weight:600"><span>Order total</span><b>${my?rm(s.total+ship):rm(s.total)+' + SGD '+CFG.shipSG}</b></div></div>
+    ${promoBox('k')}
+    <div class="nowpay"><div class="row"><span>Pay now</span><b>${rm(pay)}</b></div>
+    ${s.pre?`<div class="row" style="font-size:13px;color:var(--pre);font-weight:500"><span>Preorder balance, paid when stock arrives in Malaysia</span><span>${rm(s.bal)}</span></div>`:''}
+    ${my?'':`<div class="row" style="font-size:13px;font-weight:500"><span>Singapore shipping of SGD ${CFG.shipSG} is paid separately. We will confirm how to pay it on WhatsApp.</span></div>`}</div>
+    ${s.pre?'<div class="pn" style="display:block">This is a preorder (2 weeks) as our stock is directly from Dubai. Kindly be patient. I promise it will be worth the wait.</div>':''}`;
+  $("payBox").innerHTML=`<b>Scan the QR to pay ${rm(pay)}</b><br><img src="assets/qr.jpg" alt="Payment QR" style="margin-top:8px"><div class="note">${esc(CFG.payLabel)}<br>${esc(CFG.payName)}</div>
+   <div class="alertbox"><b>Important:</b> after paying, please <b>attach your payment slip</b> (screenshot) in the WhatsApp chat. We will confirm your order once we receive it.</div>`;
+}
+function openCO(){
+  renderCO();
+  $("demoNote").style.display=CFG.whatsapp==='60123456789'?'block':'none';
+  show("co");upd();
+}
+function msg(){
+  const s=sums(),ref="AZ"+Date.now().toString().slice(-6);
+  const rd=[],pr=[];
+  cart.forEach(i=>{const l=line(i);if(l.r)rd.push(`- ${full(l.p)} (${i.size}) x${l.r} = ${rm(l.pr*l.r)}`);if(l.pre)pr.push(`- ${full(l.p)} (${i.size}) x${l.pre} = ${rm(l.pr*l.pre)} (deposit ${rm(CFG.deposit*l.pre)})`)});
+  let m=`Hi, I would like to place an order at ${CFG.brand}.\nReference no.: ${ref}\n`;
+  if(rd.length)m+=`\n*READY STOCK (paid in full):*\n${rd.join('\n')}\n`;
+  if(pr.length)m+=`\n*PREORDER (${rm(CFG.deposit)} deposit per bottle):*\n${pr.join('\n')}\n`;
+  const my=dest==='MY',ship=my?CFG.shipMY:0;
+  m+=`\nSubtotal: ${rm(s.subtotal)}${s.disc?`\nPromo code ${CFG.promo.code}: -${rm(s.disc)}`:''}\nShipping (${my?'Malaysia':'Singapore'}): ${my?rm(CFG.shipMY):'SGD '+CFG.shipSG+' (to be arranged separately)'}`;
+  m+=`\nOrder total: ${my?rm(s.total+ship):rm(s.total)+' + SGD '+CFG.shipSG}\n*Paid now: ${rm(s.now+ship)}*`;
+  if(s.pre)m+=`\nPreorder balance: ${rm(s.bal)} (to be paid when stock arrives in Malaysia)`;
+  m+=`\n\nPayment method: ${CFG.payLabel}\n(Payment slip attached below)`;
+  m+=`\n\n*Delivery details:*\nDeliver to: ${my?'Malaysia':'Singapore'}\nName: ${$("name").value.trim()}\nPhone: ${$("phone").value.trim()}\nAddress: ${$("addr").value.trim()}`;
+  if($("note").value.trim())m+=`\nNotes: ${$("note").value.trim()}`;
+  return m;
+}
+function upd(){
+  const ok=cart.length&&$("name").value.trim()&&$("phone").value.trim().length>=9&&$("addr").value.trim().length>=8;
+  const a=$("wa");a.classList.toggle("dis",!ok);a.href=ok?wa(msg()):"#";
+  $("wa2").href=wa('Hi, I have a question about my order at '+CFG.brand);
+}
+let tt;function toast(t){const e=$("toast");e.textContent=t;e.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>e.classList.remove("on"),1800)}
+
+$("bestGrid").innerHTML=BEST.map(id=>cardHTML(BYID[id],'b_')).join('');
+$("sigGrid").innerHTML=PRODUCTS.filter(p=>p.t==='S').map(p=>cardHTML(p,'g_')).join('');
+fixStatus($("bestGrid"));fixStatus($("sigGrid"));
+initFilters();renderSeg();render();updCount();
+$("fab").href=wa('Hi, I would like to ask about your products at '+CFG.brand);
+</script>
+</body>
+</html>
